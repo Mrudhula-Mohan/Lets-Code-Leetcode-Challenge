@@ -1,0 +1,11 @@
+class Solution(object):
+    def defangIPaddr(self, address):
+        """
+        :type address: str
+        :rtype: str
+        """
+        result=0
+        for ch in address:
+            if ch=='.':
+                result=address.replace('.','[.]')
+        return result
