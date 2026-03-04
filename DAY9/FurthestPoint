@@ -1,0 +1,11 @@
+class Solution(object):
+    def furthestDistanceFromOrigin(self, moves):
+        """
+        :type moves: str
+        :rtype: int
+        """
+        right = moves.count('R')
+        left = moves.count('L')
+        underscore = moves.count('_')
+
+        return abs(right - left) + underscore
